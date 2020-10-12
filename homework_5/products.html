@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muddy Paws Adventure Gear - Shop Cats</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Roboto', serif;
+          font-size: 16px;
+        }
+      </style>
+  </head>
+
+
+  <body>
+    <div class="gridContainer">
+      <!-- Header -->
+      <div class="headerContainer">
+        <div class="headerContents headerBar">
+          <div></div>
+          <div class="headerImage"><img src="./images/pawPrints.jpg" alt="Image of two wet paw prints on pavement."></div>
+          <div class="siteTitle"><h1><a href="./index.html">Muddy Paws Adventure Gear</a></h1></div>
+          <div><p class="account">My Account</p></div>
+        </div>
+        <div class="headerContents navLinks">
+          <div class="navBox searchBar"><input type="text" name="search" value="" placeholder="Search..."></div>
+          <div class="navBox"><p><a href="./products.html">Cats</a></p></div>
+          <div class="navBox"><p>Dogs</p></div>
+          <div class="navBox"><p>Accessories</p></div>
+          <div class="navBox"><p>Cart</p></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="mainContent">
+        <div class="productContainer">
+          <p>Shop/Cats</p>
+          <br/>
+          <div class="categoryWrapper">
+            <h2 class="categoryTitle">Categories</h2>
+
+            <div class="categoriesContainer">
+              <div class="categorieCard">
+                <div class="categoryImg"><img src="./images/cat-collar.jpg" alt="Cat Product Image"></div>
+                <p>GPS Collars</p>
+
+              </div>
+              <div class="categorieCard">
+                <div class="categoryImg"><img src="./images/catHarnessRed.jpg" alt="Cat Product Image"></div>
+                <p>Harnesses</p>
+
+              </div>
+              <div class="categorieCard">
+                <div class="categoryImg"><img src="./images/catBackpack2.jpg" alt="Cat Product Image"></div>
+                <p>Backpacks</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="productMainWrapper">
+            <h1>Shop All Cats (9 items)</h1><br/>
+
+            <div class="productMainGrid">
+              <!-- Filters -->
+
+              <div class="filterBar">
+                <h3>Filter results</h3><br/>
+
+                <div class="filterItem">
+                  <h4>Categories</h4> <br/>
+
+                  <input type="checkbox" id="gpsCollars" name="gpsCollars" value="collars">
+                  <label for="gpsCollars"> GPS Collars</label><br>
+                  <input type="checkbox" id="harnesses" name="harnesses" value="harnesses">
+                  <label for="harnesses">Harnesses</label><br>
+                  <input type="checkbox" id="backpacks" name="backpacks" value="backpacks">
+                  <label for="backpacks">Backpacks</label><br>
+
+                </div><br/>
+
+                <div class="filterItem">
+                  <h4>Size</h4> <br/>
+
+                  <input type="checkbox" id="tiny" name="tiny" value="tiny">
+                  <label for="tiny">Tiny</label><br>
+                  <input type="checkbox" id="small" name="small" value="small">
+                  <label for="small">Small</label><br>
+                  <input type="checkbox" id="medium" name="medium" value="medium">
+                  <label for="medium">Medium</label><br>
+                  <input type="checkbox" id="large" name="large" value="large">
+                  <label for="large">Large</label><br>
+                  <input type="checkbox" id="xLarge" name="xLarge" value="xLarge">
+                  <label for="xLarge">Extra Large</label><br>
+
+                </div><br/>
+
+                <div class="filterItem">
+                  <h4>Color</h4> <br/>
+
+                  <input type="checkbox" id="strawberryBox" name="strawberryBox" value="strawberryBox">
+                  <label for="strawberryBox">Strawberry</label><br>
+                  <input type="checkbox" id="blackberryBox" name="blackberryBox" value="blackberryBox">
+                  <label for="blackberryBox">Blackberry</label><br>
+                  <input type="checkbox" id="crazyberryBox" name="crazyberryBox" value="crazyberryBox">
+                  <label for="crazyberryBox">Crazyberry</label><br>
+                  <input type="checkbox" id="fireOrangeBox" name="fireOrangeBox" value="fireOrangeBox">
+                  <label for="fireOrangeBox">Fire Orange</label><br>
+
+                </div><br/>
+
+                <div class="filterItem">
+                  <h4>Price</h4> <br/>
+
+                  <input type="checkbox" id="lowPrice" name="lowPrice" value="lowPrice">
+                  <label for="lowPrice">$0.00 to $24.99</label><br>
+                  <input type="checkbox" id="midPrice" name="midPrice" value="midPrice">
+                  <label for="midPrice">$25.00 - $99.99</label><br>
+                  <input type="checkbox" id="highPrice" name="highPrice" value="highPrice">
+                  <label for="highPrice">$100.00+</label><br>
+
+                </div><br/>
+
+                <div class="filterButtons">
+                  <div class="applyFilterBtn">
+                    Apply Filters
+                  </div> <br/>
+                  <p class="clearFilters">Clear Filters</p>
+                </div>
+              </div>
+
+              <!-- Product Cards -->
+
+              <div class="productMain" id="productMain">
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/catHarnessBlack.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Cat GPS Collar</h4>
+                        <p>Feline</p>
+                        <p>$15.99</p>
+                    </div>
+                    <div class="productBtns">
+                      <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/cat-collar.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Cat Collar 2.0</h4>
+                        <p>Purrfect</p>
+                        <p>$45.00</p>
+                    </div>
+                    <div class="productBtns">
+                        <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/catBackpack.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>BuddyPack</h4>
+                        <p>Purrfect</p>
+                        <p>$99.99</p>
+                    </div>
+                    <div class="productBtns">
+                        <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/catHarnessRed.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Hiking Harness</h4>
+                        <p>Kitty Claws</p>
+                        <p>$12.99</p>
+                    </div>
+                    <div class="productBtns">
+                      <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/zoe-gayah-jonker-lm99jZLEvPQ-unsplash.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Cat Harness</h4>
+                        <p>Feline</p>
+                        <p>$30.00</p>
+                    </div>
+                    <div class="productBtns">
+                        <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/jair-hernandez-h9MdmLCHU-o-unsplash.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Purrfect Collar</h4>
+                        <p>Purrfect</p>
+                        <p>$29.99</p>
+                    </div>
+                    <div class="productBtns">
+                        <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/catBackpack2.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>KittyPac</h4>
+                        <p>US Cat Supplies</p>
+                        <p>$150.00</p>
+                    </div>
+                    <div class="productBtns">
+                      <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/cat-Collar2.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Tracking Collar</h4>
+                        <p>US Cat Supplies</p>
+                        <p>$35.99</p>
+                    </div>
+                    <div class="productBtns">
+                        <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productCardContainer">
+                  <div class="productCard">
+                    <div class="productImage"><img src="./images/erik-jan-leusink-pT3VQ7__Uu8-unsplash.jpg" alt="Cat Product Image"></div>
+                    <div class="cardInfo">
+                        <h4>Cat2Go</h4>
+                        <p>Cat2Go Packs</p>
+                        <p>$75.00</p>
+                    </div>
+                    <div class="productBtns">
+                        <div class="seePgBtn"><a href="./detail.html">Details</a></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div  class="footerContainer">
+        <div class="navBox textInfo"><p>Created by Amanda Crawford, CMU PUI Fall 2020</p></div>
+        <div class="navBox footerItemContainer">
+          <div class="footerItem"><p>About Us</p></div>
+          <div class="footerItem"><p>Returns</p></div>
+          <div class="footerItem"><p>Your Account</p></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

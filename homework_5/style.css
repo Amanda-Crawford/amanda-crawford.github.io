@@ -1,0 +1,448 @@
+/*
+  Basic style and grid
+*/
+
+* {
+   margin: 0px;
+   padding: 0px;
+ }
+
+ .grid-container {
+    display: grid;
+    position: relative;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas: "headerContainer"
+                         "mainContent"
+                         "footerContainer";
+    grid-template-columns: repeat(1fr, 2);
+    grid-template-rows: 5fr, 2fr, 14fr, 7fr, 2fr;
+  }
+
+
+  /*
+    Header style, for each page and doesn't change
+  */
+  .headerContents {
+    display: block;
+    background-color: #BCCED7;
+  }
+
+  .headerBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 12fr 1fr;
+    grid-gap: 0.5em;
+    justify-content: left;
+    justify-items: left;
+  }
+
+  .headerImage img{
+    max-height: 100px;
+    border-radius: 6px;
+    margin: 8px;
+  }
+
+  .account {
+    color: #5B4B49;
+    font-size: 12px;
+  }
+
+  .navLinks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.5em;
+    justify-content: center;
+    padding-top: 20px;
+    height: 40px;
+  }
+
+  .navBox {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  .siteTitle h1 a {
+    padding-top: 20px;
+    text-align: left;
+    color: #D8782D;
+    text-decoration: none;
+  }
+
+  .headerContents input[type=text] {
+    float: left;
+    padding: 6px;
+    margin-left: 8px;
+    border: none;
+    font-size: 17px;
+    background-color: #455F6C;
+    color: #EADECF;
+    border-radius: 8px;
+  }
+  /*
+    NavBar Styling
+  */
+  .navLinks p {
+  	color: #5B4B49;
+  	text-decoration: none;
+  }
+
+  .navLinks a {
+  	color: #5B4B49;
+  	text-decoration: none;
+  }
+
+  .navLinks a:hover {
+  	border-bottom: 5px solid #D8782D;
+  }
+
+  /*
+    Footer styling, again doesn't change
+  */
+
+  .footerContainer {
+    padding-top: 12px;
+    padding-left: 24px;
+    background-color: #BCCED7;
+    height: 24px;
+    color: #455F6C;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .footerContainer a {
+  	color: #d9d9d9;
+  	text-decoration: none;
+  }
+
+  .footerContainer a:hover {
+  	color: #ffffff;
+  }
+
+  .footerItemContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    justify-content: right;
+    justify-items: right;
+    padding-right: 12px;
+  }
+
+
+  /*
+    Main content styling for all pages, ie background and text colors
+  */
+  .mainContent{
+    background-color: #EADECF;
+    color: #455F6C;
+
+  }
+
+  /*
+    Homepage styling
+  */
+
+  .splashImg img{
+    width: 100%;
+    height: auto;
+  }
+
+  .shopTopContainer {
+    padding: 24px;
+    width: 100%;
+    height: auto;
+  }
+  .shopTopContainer a{
+    text-decoration: none;
+    color: #455F6C;
+  }
+
+  .topImgContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .topImgDiv img{
+    width: 265px;
+    height: 300px;
+    border-radius: 12px;
+  }
+
+  /*
+    Product detail page image
+  */
+
+  .breadCrumbs a {
+    color: #455F6C;
+    text-decoration: none;
+  }
+
+  .detailMainContainer {
+    padding:50px;
+    width: auto;
+    height: 1000px;
+  }
+
+  .detailContents {
+    width: 100%;
+    height: 600px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .detailName {
+    padding-bottom: 20px;
+  }
+
+  .detailPicture {
+    max-height: 400px;
+    max-width: 300px;
+  }
+
+  .detailPicture img{
+    max-width: 100%;
+  }
+
+  .detailInformation {
+    color: #455F6C;
+    padding: 0;
+  }
+
+  .detailButtonContainer {
+    margin-top: 40px;
+  }
+
+  .detailPrice {
+    margin-bottom: 20px;
+  }
+
+  .detailButtonContainer button {
+    color: #455F6C;
+    border: none;
+    background-color: inherit;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 6px;
+  }
+
+  #activeButton {
+    border: 1px solid #455F6C;
+    border-radius: 6px;
+    padding: 1px;
+  }
+
+  .colorButtonWrapper {
+
+    display: inline-block;
+
+  }
+
+  .sideButtonWrapper {
+
+    display: inline-block;
+  }
+  .qtButton {
+    width: auto;
+    float: left;
+    display: inline-block;
+    align: center;
+  }
+
+  .addToCartButtonDiv {
+    margin: 0 auto;
+    align: center;
+    margin: 24px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #D8782D;
+    text-align: center;
+  }
+
+  .addText {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .sideTextCont {
+    float: left;
+    padding: 12px;
+    padding-top: 16px;
+    align: center;
+    color: #455F6C;;
+  }
+
+  .buttonColor {
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+  }
+
+
+  /*
+    View all Cats product styling
+  */
+  .productContainer {
+    padding: 20px;
+    display: block;
+  }
+
+  .productMainWrapper {
+    display: inline-block;
+  }
+
+  .productMain {
+    display: flex;
+    flex-wrap: wrap;
+    position:
+  }
+  .productCardContainer {
+    float: right;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #BCCED7;
+    width: 230px;
+    max-height: 450px;
+
+  }
+
+  .productImage img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .cardInfo {
+    height:50px;
+    margin: 10px;
+  }
+
+  .productCardName {
+    margin: 10px;
+  }
+
+  .productColorNum{
+    margin: 10px;
+  }
+
+  .productBtns {
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .seePgBtn {
+    background: #D8782D;
+    color: #455F6C;
+    width: 80px;
+    height: 25px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .seePgBtn a {
+    color: #455F6C;
+  }
+
+  /*
+    Categories on product page styling
+  */
+  .categoriesContainer {
+    width: 75%;
+    height: 200px;
+    float: right;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .categoryImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+  }
+
+  .categoryTitle {
+    margin: 0 auto;
+  }
+
+  .productMainGrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2em;
+    justify-content: center;
+    justify-items: center;
+  }
+  /*
+    Filter bar style and grid
+  */
+
+  .filterItem{
+    border: 1px solid #455F6C;
+    border-radius: 6px;
+    padding: 12px;
+  }
+
+  .filterButtons {
+    display: block;
+    text-align: center;
+  }
+
+  .filterButtons p {
+    text-decoration: underline;
+    font-size: 12px;
+  }
+
+  .filterButtons div {
+    background-color: #D8782D;
+    width: 60px%;
+    height: 25px;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  /*
+    Style by ID where it will not change (just colors right now)
+  */
+
+  #blackberry{
+    background-color: #30123E;
+  }
+
+  #strawberry{
+    background-color: #FC8181;
+  }
+
+  #crazyberry{
+    background-color: #2FFC9A;
+  }
+
+  #fireOrange {
+    background-color: #F98C4F;
+  }
+
+  /*
+    All links get no underline
+  */
+
+  a {
+    text-decoration: none;
+  }
