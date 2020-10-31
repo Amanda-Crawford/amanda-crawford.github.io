@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muddy Paws Adventure Gear Product Detail</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Roboto', serif;
+          font-size: 16px;
+        }
+      </style>
+      <!-- JS Code -->
+      <script src="./main.js"></script>
+  </head>
+
+  <body onload="loadCart()">
+    <div class="gridContainer">
+      <!-- Header -->
+      <div class="headerContainer">
+        <div class="headerContents headerBar">
+          <div></div>
+          <div class="headerImage"><img src="./images/pawPrints.jpg" alt="Image of two wet paw prints on pavement."></div>
+          <div class="siteTitle"><h1><a href="./index.html">Muddy Paws Adventure Gear</a></h1></div>
+          <div><p class="account">My Account</p></div>
+        </div>
+        <div class="headerContents navLinks">
+          <div class="navBox searchBar"><input type="text" name="search" value="" placeholder="Search..."></div>
+          <div class="navBox"><p><a href="./products.html">Cats</a></p></div>
+          <div class="navBox"><p>Dogs</p></div>
+          <div class="navBox"><p>Accessories</p></div>
+          <div class="navBox"><p><a href="./cart.html" id="cartLink">Cart</a></p></div>
+        </div>
+      </div>
+
+
+      <!-- Main Content -->
+      <div class="mainContent">
+        <div class="detailMainContainer" id="detailMainContainer">
+          <div class="breadCrumbs" class="detailName"><p><a href="./products.html">Shop/Cats/GPS Collars</a></p></div>
+          <br/>
+          <div class="detailContents">
+            <div class="detailPicture" id="detailPicture"><img id="detailImg"src="./images/cat-Collar2.jpg" alt="Image of cat in red collar"></div>
+            <div class="detailInformation" id="detailInformation">
+              <div class="detailName"><h1>Tracking Collar</h1></div>
+              <div class="detailBrand"><h2>US Cat Supplies</h2></div>
+              <br/>
+              <h3 class="detailPrice" id="detailPrice">$35.99</h3>
+
+              <!-- Size and color and quant adjustments -->
+              <div class="detailButtonContainer" id="detailButtonContainer">
+                <div class="sideButtons" id="sideButtons">
+                  <div class="sideTextCont" id="sideTextCont"><p id="colorBtnTxt">Color: Strawberry</p></div>
+                  <div class = "sideButtonWrapper">
+                    <button class="sideBtn colorBtn" onclick="changeColorBB()" type="button">
+                      <div class="buttonColor" id="blackberry"></div>
+                      <p>Blackberry</p>
+                    </button>
+
+                    <button class="sideBtn colorBtn" onclick="changeColorStraw()" type="button">
+                        <div class="buttonColor" id="strawberry"></div>
+                        <p>Strawberry</p>
+                    </button>
+
+                    <button class="sideBtn colorBtn"  onclick="changeColorCrazy()"type="button">
+                      <div class="buttonColor" id="crazyberry"></div>
+                      <p>Crazyberry</p>
+                    </button>
+
+                    <button class="sideBtn colorBtn" onclick="changeColorFire()" type="button">
+                      <div class="buttonColor" id="fireOrange"></div>
+                      <p>Fire Orange</p>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="colorButtons" id="colorButtons">
+                  <div class="sideTextCont" id="sideTextCont"><p id="sizeBtnTxt">Size: Medium</p></div>
+                  <div class="colorButtonWrapper">
+                    <button class="sideBtn" id="frontButton" onclick="sizeTiny()" type="button">Tiny</button>
+                    <button class="sideBtn" id="frontButton" onclick="sizeSmall()" type="button">Small</button>
+                    <button class="sideBtn" id="backButton" onclick="sizeMed()" type="button">Medium</button>
+                    <button class="sideBtn" id="frontButton" onclick="sizeLarge()" type="button">Large</button>
+                    <button class="sideBtn" id="frontButton" onclick="sizeXL()" type="button">Extra Large</button>
+                  </div>
+                </div>
+                <br/>
+                <div class="qtButton" id="qtButton">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantity" name="quantity" min="0" value="1">
+                </div>
+
+                <br/>
+                <div class="addToCartButtonDiv">
+                  <button type="button" name="addToCartBtn" onClick=addToCart()>
+                      <p class="addText">Add to cart</p>
+                  </button>
+                </div>
+              </div>
+
+              </div>
+
+            </div>
+
+            <!-- Product Detail -->
+
+            <div class="productDetailsContainer">
+                <h2 class="productDetailHeader">Product Details</h2>
+                <br/>
+                <div class="productDetailText">
+                  <p>This cat collar is literally the best invention in the ENTIRE WORLD.  We here at US Cat Supplies
+                    love cats so much that we followed our own around for 12 weeks with our hands as collars to learn where cats
+                    put the most tension on a harness so that we could design something great.  Also, the GPS is great for tracking
+                    when your teenage kitty is sneaking out to go steal treats from the neighbors.</p>
+                  <br/>
+                  <p>Our collar fits cats from the size of your palm all the way to those big chonky bois that can`t stop eating treats.
+                      You can find our size chart on our website or just guess like most people (medium is a safe bet!). </p>
+                  <br/>
+                  <p>No cats were harmed in the testing of our products but we cannot say the same for our employees.</p>
+                </div>
+            </div>
+
+            </div>
+          </div>
+
+
+      <!-- Footer -->
+      <div  class="footerContainer">
+        <div class="navBox textInfo"><p>Created by Amanda Crawford, CMU PUI Fall 2020</p></div>
+        <div class="navBox footerItemContainer">
+          <div class="footerItem"><p>About Us</p></div>
+          <div class="footerItem"><p>Returns</p></div>
+          <div class="footerItem"><p>Your Account</p></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

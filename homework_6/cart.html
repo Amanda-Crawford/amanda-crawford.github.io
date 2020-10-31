@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muddy Paws Adventure Gear: Cart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Roboto', serif;
+          font-size: 16px;
+        }
+      </style>
+      <!-- JS Code -->
+      <script src="main.js"></script>
+  </head>
+
+
+  <body onload="loadCart()">
+    <div class="gridContainer">
+      <!-- Header -->
+      <div class="headerContainer">
+        <div class="headerContents headerBar">
+          <div></div>
+          <div class="headerImage"><img src="./images/pawPrints.jpg" alt="Image of two wet paw prints on pavement."></div>
+          <div class="siteTitle"><h1><a href="./index.html">Muddy Paws Adventure Gear</a></h1></div>
+          <div><p class="account">My Account</p></div>
+        </div>
+        <div class="headerContents navLinks">
+          <div class="navBox searchBar"><input type="text" name="search" value="" placeholder="Search..."></div>
+          <div class="navBox"><p><a href="./products.html">Cats</a></p></div>
+          <div class="navBox"><p>Dogs</p></div>
+          <div class="navBox"><p>Accessories</p></div>
+          <div class="navBox"><p><a href="./cart.html" id="cartLink">Cart</a></p></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="mainContent">
+        <br/>
+        <div class="cartPageHolder">
+          <div class="leftCartHolder">
+            <h2>Your Cart (2 items)</h2>
+            <br/>
+            <div class="cartItemHolder">
+              <div class="cartImg">
+                <img src="./images/cat-Collar2.jpg" alt="">
+              </div>
+              <div class="cartText">
+                <h4>Tracking Collar</h4>
+                <h4>$35.99</h4>
+                <p>Color: Strawberry</p>
+                <p>Size: Medium</p>
+                <p>Qt. 1</p>
+
+                <br/>
+                <div class="editRemove">
+                  <p>Edit</p>
+                  <p>Remove</p>
+                </div>
+              </div>
+            </div>
+
+            <br/>
+            <div class="cartItemHolder">
+              <div class="cartImg">
+                <img src="./images/catBackpack2.jpg" alt="">
+              </div>
+              <div class="cartText">
+                <h4>KittyPac</h4>
+                <h4>$150.00</h4>
+                <p>Color: Fire Orange</p>
+                <p>Size: Medium</p>
+                <p>Qt. 1</p>
+
+                <br/>
+                <div class="editRemove">
+                  <p>Edit</p>
+                  <p>Remove</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightCartHolder">
+            <h2>Order Summary</h2>
+            <br />
+            <div class="summaryText">
+              <p class="subtotalText">Subtotal</p>
+              <p class="subtotalNum">$185.99</p>
+              <p class="shippingText">Shipping</p>
+              <p class="shippingNum">$15.99</p>
+              <p class="taxText">Tax</p>
+              <p class="taxNum">$5.42</p>
+            </div>
+            <br/>
+            <div class="totalText">
+              <h2>Estimated Total</h2>
+              <h2>$207.40</h2>
+            </div>
+            <br />
+            <div class="proceedBtn">
+              Proceed To Checkout
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div  class="footerContainer">
+        <div class="navBox textInfo"><p>Created by Amanda Crawford, CMU PUI Fall 2020</p></div>
+        <div class="navBox footerItemContainer">
+          <div class="footerItem"><p>About Us</p></div>
+          <div class="footerItem"><p>Returns</p></div>
+          <div class="footerItem"><p>Your Account</p></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
