@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4f0dcd4a.chunk.css",
+    "main.js": "/portfolio/static/js/main.f81c0928.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f81c0928.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.d3717ec0.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d3717ec0.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/portfolio/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.69f8cd01.chunk.js": "/portfolio/static/js/2.69f8cd01.chunk.js",
+    "static/js/2.69f8cd01.chunk.js.map": "/portfolio/static/js/2.69f8cd01.chunk.js.map",
+    "static/js/3.d08d0f16.chunk.js": "/portfolio/static/js/3.d08d0f16.chunk.js",
+    "static/js/3.d08d0f16.chunk.js.map": "/portfolio/static/js/3.d08d0f16.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/portfolio/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.4f0dcd4a.chunk.css.map": "/portfolio/static/css/main.4f0dcd4a.chunk.css.map",
+    "static/js/2.69f8cd01.chunk.js.LICENSE.txt": "/portfolio/static/js/2.69f8cd01.chunk.js.LICENSE.txt",
+    "static/media/AmandaCrawford_Resume_fall20.66522690.pdf": "/portfolio/static/media/AmandaCrawford_Resume_fall20.66522690.pdf",
+    "static/media/PortfolioSite.af86964e.jpg": "/portfolio/static/media/PortfolioSite.af86964e.jpg",
+    "static/media/activist.ed59567b.jpg": "/portfolio/static/media/activist.ed59567b.jpg",
+    "static/media/brew.245e87cc.png": "/portfolio/static/media/brew.245e87cc.png",
+    "static/media/context.d77b9692.png": "/portfolio/static/media/context.d77b9692.png",
+    "static/media/final.9e1324df.png": "/portfolio/static/media/final.9e1324df.png",
+    "static/media/geagle.55c856ca.png": "/portfolio/static/media/geagle.55c856ca.png",
+    "static/media/headshot.dca3266d.jpg": "/portfolio/static/media/headshot.dca3266d.jpg",
+    "static/media/kstbackground.ea539fb1.png": "/portfolio/static/media/kstbackground.ea539fb1.png",
+    "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg",
+    "static/media/movie.81d99ed5.png": "/portfolio/static/media/movie.81d99ed5.png",
+    "static/media/sarah.face7c90.png": "/portfolio/static/media/sarah.face7c90.png",
+    "static/media/smsb.347304b1.png": "/portfolio/static/media/smsb.347304b1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3717ec0.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.69f8cd01.chunk.js",
+    "static/css/main.4f0dcd4a.chunk.css",
+    "static/js/main.f81c0928.chunk.js"
+  ]
+}
